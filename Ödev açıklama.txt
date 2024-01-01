@@ -1,0 +1,5 @@
+Tasarlayacağım bu projede bir hastane randevu sisemi olan web sitesi tasarlayacağım.Bu web
+sitesinde bir giriş yap ve kayıt ol sayfası, Hastane hakkında bilgi veren hakkımızda sayfası
+Doktorlar hakkında bilgi veren doktorlar sayfası ve bölümler hakkında bilgi veren bir sayfa bulunacaktır.
+Daha sonra bir Admin paneli ile Klinik ekleme doktor ekleme randevu saati değiştirme gibi işlemleri
+gerçekleştirebilen bir admin sayfası olacaktır.Gerekli yetkilendirmeler yapılarak Dışardan giren kullanıcılar Admin sayfasına erişemeyecektir.

@@ -8,8 +8,8 @@
 
         <!-- Doktor Ekle, Sil, Güncelle Butonları -->
         <div class="mt-4">
-            <button type="button" class="btn btn-success btn-margin">Doktor Ekle</button>
-            <button type="button" class="btn btn-danger btn-margin">Doktor Sil</button>
+        <a href="@Url.Action("DoktorEkle", "Doktor")" class="btn btn-success btn-margin">Doktor Ekle</a>
+        <a href="@Url.Action("DoktorSil", "Doktor")" class="btn btn-danger btn-margin">Doktor Sil</a>
         </div>
 
         <hr>
@@ -18,8 +18,9 @@
 
         <!-- Admin Ekle, Sil, Güncelle Butonları -->
         <div class="mt-4">
-            <button type="button" class="btn btn-success btn-margin">Admin Ekle</button>
-            <button type="button" class="btn btn-danger btn-margin">Admin Sil</button>
+        <a href="@Url.Action("AdminEkle", "Admin")" class="btn btn-success btn-margin">Admin Ekle</a>
+        <a href="@Url.Action("AdminSil", "Admin")" class="btn btn-danger btn-margin">Admin Sil</a>
+
         </div>
     <hr>
 
@@ -27,12 +28,12 @@
 
     <!-- Klinik Ekle, Sil, Güncelle Butonları -->
     <div class="mt-4">
-        <button type="button" class="btn btn-success btn-margin">Klinik Ekle</button>
-        <button type="button" class="btn btn-danger btn-margin">Klinik Sil</button>
+        <a href="@Url.Action("KlinikEkle", "Klinik")" class="btn btn-success btn-margin">Klinik Ekle</a>
+        <a href="@Url.Action("KlinikSil", "Klinik")" class="btn btn-danger btn-margin">Klinik Sil</a>
     </div>
     <hr>
     <h2>Randevuları Goruntule</h2>
-    <button type="button" class="btn btn-primary mt-3">Randevuları Görüntüle</button>
+    <a href="@Url.Action("RandevulariGoruntule", "Randevu")" class="btn btn-primary mt-3">Randevuları Görüntüle</a>
 
     </div>
 

@@ -1,22 +1,23 @@
 ﻿<!DOCTYPE html>
 <html lang="en">
 <head>
-
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Doktor Yönetimi</title>
 
     <!-- Bootstrap CSS -->
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Özel CSS -->
+    <link href="path/to/custom.css" rel="stylesheet">
 </head>
 <body>
-
-    @RenderBody()
-
+    <li class="nav-item ms-auto">
+        <a class="nav-link text-dark" asp-area="" asp-controller="Admin" asp-action="Admin">Admin</a>
+    </li>
     <!-- Bootstrap JS ve jQuery eklemeyi unutmayın -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
-
+    @RenderBody()
 </body>
-</html>
 

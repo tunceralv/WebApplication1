@@ -1,8 +1,39 @@
-﻿
-@{
-    ViewData["Title"] = "Admin";
-    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+﻿@model AdminTable
+@{ 
+    ViewData["Title"] = "Admin Paneli";
 }
 
-<h1>Admin</h1>
+    <div class="container mt-5">
+        <h2>Doktor Yönetimi</h2>
+
+        <!-- Doktor Ekle, Sil, Güncelle Butonları -->
+        <div class="mt-4">
+            <button type="button" class="btn btn-success btn-margin">Doktor Ekle</button>
+            <button type="button" class="btn btn-danger btn-margin">Doktor Sil</button>
+        </div>
+
+        <hr>
+
+        <h2>Admin Yönetimi</h2>
+
+        <!-- Admin Ekle, Sil, Güncelle Butonları -->
+        <div class="mt-4">
+            <button type="button" class="btn btn-success btn-margin">Admin Ekle</button>
+            <button type="button" class="btn btn-danger btn-margin">Admin Sil</button>
+        </div>
+    <hr>
+
+    <h2>Klinik Yönetimi</h2>
+
+    <!-- Klinik Ekle, Sil, Güncelle Butonları -->
+    <div class="mt-4">
+        <button type="button" class="btn btn-success btn-margin">Klinik Ekle</button>
+        <button type="button" class="btn btn-danger btn-margin">Klinik Sil</button>
+    </div>
+    <hr>
+    <h2>Randevuları Goruntule</h2>
+    <button type="button" class="btn btn-primary mt-3">Randevuları Görüntüle</button>
+
+    </div>
+
 

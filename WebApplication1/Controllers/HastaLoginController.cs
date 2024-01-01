@@ -1,5 +1,7 @@
 ﻿using Microsoft.AspNetCore.Authentication;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.Data.SqlClient;
+using System.Data;
 using System.Security.Claims;
 using WebApplication1.Models;
 
@@ -33,6 +35,7 @@ namespace WebApplication1.Controllers
     public IActionResult Register(Hasta hasta)
         {
             return View();
+
         }
     }
 }

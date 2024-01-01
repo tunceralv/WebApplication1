@@ -1,6 +1,7 @@
 ﻿using Microsoft.AspNetCore.Authentication;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore.Metadata.Internal;
 using System.Security.Claims;
 using WebApplication1.Models;
 
@@ -27,6 +28,15 @@ namespace WebApplication1.Controllers
             {
                 return View();
             }
+        }
+
+        public IActionResult AdminRegister(AdminTable admin)
+        {
+
+            db.AdminTables.Add(admin);
+            db.SaveChanges();
+            return View(admin);
+
         }
     }
 }

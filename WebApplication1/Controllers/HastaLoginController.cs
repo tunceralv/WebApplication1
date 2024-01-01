@@ -1,6 +1,7 @@
 ﻿using Microsoft.AspNetCore.Authentication;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Data.SqlClient;
+using Microsoft.EntityFrameworkCore.Diagnostics;
 using System.Data;
 using System.Security.Claims;
 using WebApplication1.Models;
@@ -34,7 +35,16 @@ namespace WebApplication1.Controllers
 
     public IActionResult Register(Hasta hasta)
         {
-            return View();
+            var user = new Hasta();
+            user.HastaTc = hasta.HastaTc;
+            user.HastaAd = hasta.HastaAd;
+            user.HastaSoyad = hasta.HastaSoyad;
+            user.HastaEmail = hasta.HastaEmail;
+            user.HastaTel = hasta.HastaTel;
+
+            db.Hasta.Add(user);
+            db.SaveChanges();
+            return View(hasta);
 
         }
     }
